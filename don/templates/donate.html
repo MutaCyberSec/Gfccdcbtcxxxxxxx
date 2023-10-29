@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=-1.0" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'"/>
+    <title>Borderless </title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='logo.ico') }}">
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"> 
+ 
+  </head>
+
+
+  <body class="main_body"  style="background-color:rgb(226, 226, 232); width: fit-content;">
+  
+
+<div class="login-container">
+
+  <img id="previewImg" src="{{ url_for('static', filename='/imgs/logo.png') }}" class="site_banner"/>
+  <br>
+  <p class="ide">   Borderless Donations
+   
+  </p>
+
+ <p class="sele"  style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">  Select A Secure Method For Donation</p>
+  <br>
+  
+
+  <p class="ide"> Card And  Wallets</p>
+  <div class="banks" style="background-color:rgb(226, 226, 232);">
+
+<!-- 
+    
+ <label style= "opacity:0;">
+    <a href="https://buy.stripe.com/fZe00Ye0m0D5bsY9AA"  class="su_btn" style="text-decoration: none;" > 
+    <img id="previewImg" src="{{ url_for('static', filename='/imgs/stripe.png') }}" class="bank_banner"/>
+    <p ></p>
+  </a>
+-->
+  </label>
+
+    <label>
+      <a href="{{ url_for('skrill') }}"  class="su_btn" style="text-decoration: none;" >
+      <img id="previewImg" src="{{ url_for('static', filename='/imgs/skrill.png') }}" class="bank_banner"/>
+      <p  id="address" class="add"> rasdjhdsjsddsjfhjdshjdsdfs</p>
+      </a>
+
+     </label>
+     <label>
+      <a href="https://www.paypal.com/donate/?hosted_button_id=FDYQEKZJS2XXL"  class="su_btn" style="text-decoration: none;" > 
+      <img id="previewImg" src="{{ url_for('static', filename='/imgs/pay.png') }}" class="bank_banner"/>
+      <p  id="address" class="add"> rasdjhdsjsddsjfhjdshjdsdfs</p>
+      </a>
+   
+     </label>
+
+     
+    
+       
+    
+      </div>
+
+
+
+  <p class="ide"> Donate Crypto </p>
+    
+  <div class="crypt">
+   <label>
+    <a href="{{ url_for('ether') }}"  class="su_btn" style="text-decoration: none;" >
+    <img id="previewImg" src="{{ url_for('static', filename='/imgs/ether.jpg') }}" class="bank_banner"/>
+
+</a>
+<p class="add"> rasdjhdsjsddsjfhjdshjdsdfs</p>
+   </label>
+  
+<label>
+  <a href="{{ url_for('monero') }}"  class="su_btn" style="text-decoration: none;" >
+  <img id="previewImg" src="{{ url_for('static', filename='/imgs/monero.png') }}" class="bank_banner"/>
+  <p  id="address" class="add"> rasdjhdsjsddsjfhjdshjdsdfs</p>
+</a>
+</label>
+</div>
+
+
+<div class="crypt">
+
+ <label>
+  <a href="{{ url_for('usdt') }}"  class="su_btn" style="text-decoration: none;" >
+  <img id="previewImg" src="{{ url_for('static', filename='/imgs/usdt.png') }}" class="bank_banner"/>
+  <p  id="address" class="add"> rasdjhdsjsddsjfhjdshjdsdfs</p>
+</a>
+ </label>
+
+
+<label>
+  <a href="{{ url_for('btc') }}"  class="su_btn" style="text-decoration: none;" >
+  <img id="previewImg" src="{{ url_for('static', filename='/imgs/btc.jpg') }}" class="bank_banner"/>
+  <p  id="address" class="add"> rasdjhdsjsddsjfhjdshjdsdfs</p>
+</a>
+ </label>
+
+
+  </div>
+  <br>
+  Even The Smallest Donations Make an Impact
+</div>
+
+
+
+
+</body>
+
+</html>
